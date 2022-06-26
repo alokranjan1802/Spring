@@ -1,4 +1,4 @@
-package beans;
+package com.example.demo.patientbeans;
 
 public class patients {
 	

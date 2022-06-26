@@ -1,4 +1,4 @@
-package entities_package;
+package com.example.demo.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,8 +13,8 @@ public class patientsEntity {
 	
 	@Id
 	@Column(name="Id")
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	public int id;
 	
 	@Column(name="Name")
 	private String name;
