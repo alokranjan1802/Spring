@@ -58,11 +58,12 @@ public class PatientDAOWrapper {
 	public patients updatePatient(patients patient) {
 		patientsEntity patient_Entity = new patientsEntity();
 		BeanUtils.copyProperties(patient, patient_Entity);
-		System.out.println(patient_Entity.getAge());
 		patientsEntity p_entity= dao.save(patient_Entity);
 		patients pn=new patients();
-		
+
 		BeanUtils.copyProperties(p_entity, pn);
+		System.out.println(pn.getName());
+
 		return pn;
 	}
 	
